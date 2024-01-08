@@ -1,0 +1,30 @@
+.myModal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.333);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    /* transform: translateX(-100%); */
+    transition: all 500ms ease-in;
+}
+
+.myModal.active{
+    visibility: visible;
+    opacity: 1;
+    /* transform: translateX(0%); */
+}
+
+.myModalContent{
+    width: 60vw;
+    
+    border-radius: 15px;
+    background-color: var(--dark-color);
+    padding: 15px;
+    
+}

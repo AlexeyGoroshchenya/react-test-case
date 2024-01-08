@@ -1,0 +1,40 @@
+.body{
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons{
+    display: flex;
+    gap: 40px;
+}
+
+.button{
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+border-radius: 10px;
+padding: 5px;
+cursor: pointer;
+transition-duration: 0.5s;
+}
+
+.button:hover{
+    transform: scale(1.1);
+}
+
+
+
+.button img{
+max-width: 100%;
+    
+}
+
+.button__reverse img{
+    transform: rotate(180deg);
+}
+
+.button__disactive{
+    background-color: rgba(240, 248, 255, 0.265);
+}
